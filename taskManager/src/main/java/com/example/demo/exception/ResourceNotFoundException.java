@@ -1,0 +1,12 @@
+package com.example.demo.exception;
+
+import org.springframework.http.HttpStatus;
+
+import org.springframework.http.HttpStatus;
+
+public class ResourceNotFoundException extends AppException {
+
+    public ResourceNotFoundException(String message) {
+        super(message, HttpStatus.NOT_FOUND.value());
+    }
+}
